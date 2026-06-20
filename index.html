@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Rashad — AI & Data Science</title>
+  <meta name="description"
+    content="Mohamed Rashad — B.Tech AI & Data Science student. Algorithms, data mining, and applied ML projects including SPIS, an AI-powered pharmacy management platform.">
+  <meta property="og:title" content="Mohamed Rashad — AI & Data Science">
+  <meta property="og:description"
+    content="B.Tech AI & Data Science student. Algorithms, data mining, and applied ML projects including SPIS, an AI-powered pharmacy management platform.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0d10;
+      --bg-panel: #11161b;
+      --line: #1f2730;
+      --text: #e7ecef;
+      --muted: #8a97a3;
+      --accent: #5eead4;
+      --accent-dim: #244742;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: #0a0d10;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.01em;
+    }
+
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: rgba(10, 13, 16, 0.75);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+    }
+
+    .logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      color: var(--accent);
+    }
+
+    .logo span {
+      color: var(--muted);
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 32px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .navlinks a:hover {
+      color: var(--text);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-top: 64px;
+    }
+
+    #graph {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.55;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent);
+      font-size: 13px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      font-weight: 700;
+      line-height: 1.04;
+      max-width: 820px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero p {
+      margin-top: 22px;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .hero-cta {
+      margin-top: 36px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .btn {
+      padding: 13px 26px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid var(--line);
+      transition: all .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #06231f;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      background: #7ff2dd;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    section {
+      padding: 110px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .section-num {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 60px;
+    }
+
+    .about-grid p {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 15.5px;
+    }
+
+    .about-grid p strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .stack-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 18px;
+      font-size: 13.5px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stack-row:last-child {
+      border-bottom: none;
+    }
+
+    .stack-row span:first-child {
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .skill-card {
+      background: var(--bg-panel);
+      padding: 26px;
+    }
+
+    .skill-card h3 {
+      font-size: 15px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+    }
+
+    .skill-card ul {
+      list-style: none;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .skill-card li {
+      padding: 4px 0;
+    }
+
+    /* PROJECTS */
+    .project {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 24px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .project:last-child {
+      border-bottom: none;
+    }
+
+    .project-id {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--muted);
+      font-size: 13px;
+      padding-top: 4px;
+    }
+
+    .project h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 640px;
+      margin-bottom: 14px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      background: rgba(94, 234, 212, 0.06);
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: left;
+    }
+
+    .contact h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      max-width: 600px;
+      margin-bottom: 24px;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    @media(max-width:760px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      .project {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="logo">yousuf<span>.dev</span></div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <canvas id="graph"></canvas>
+    <div class="wrap hero-inner">
+      <div class="eyebrow mono">B.TECH AI &amp; DATA SCIENCE · SEMESTER IV</div>
+      <h1>I build things that <em>traverse</em>,<br>learn, and predict.</h1>
+      <p>Yousuf — student engineer working across algorithms, data mining, and applied ML. Comfortable across C, Python,
+        and SQL, with R in the toolkit for statistical work.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num mono">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>I'm currently in my fourth semester of <strong>B.Tech in Artificial Intelligence &amp; Data
+              Science</strong>, working through coursework that spans algorithmic design, networking, and data mining —
+            and spending a fair amount of time outside class implementing the theory by hand.</p>
+          <p>Most recently that's meant writing graph traversal and sorting algorithms from scratch in C, building a
+            clinical early-detection model in R, and documenting a campus network architecture end to end. I like the
+            discipline of low-level implementation as much as the abstraction of model building — they teach different
+            things.</p>
+          <p>I'm looking for opportunities to apply this — internships, research assistantships, or collaborative
+            projects — where I can keep building real, working systems.</p>
+        </div>
+        <div class="stack">
+          <div class="stack-row"><span>degree</span><span>B.Tech AI &amp; DS</span></div>
+          <div class="stack-row"><span>institute</span><span>Crescent Inst. of Science &amp; Tech</span></div>
+          <div class="stack-row"><span>semester</span><span>IV — 2024/28</span></div>
+          <div class="stack-row"><span>focus</span><span>Algorithms · Data Mining · ML</span></div>
+          <div class="stack-row"><span>languages</span><span>C, Python, SQL, R</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num mono">02</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>// languages</h3>
+          <ul>
+            <li>C</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>R</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>// algorithms &amp; ds</h3>
+          <ul>
+            <li>Sorting (merge, quick, heap, radix)</li>
+            <li>Graph traversal — BFS / DFS</li>
+            <li>Red-Black Trees</li>
+            <li>Kruskal's MST · Floyd–Warshall</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>// data &amp; ml</h3>
+          <ul>
+            <li>RStudio (ggplot2, rpart, e1071)</li>
+            <li>Data mining &amp; clustering</li>
+            <li>Classification models</li>
+            <li>Network analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num mono">03</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project">
+        <div class="project-id mono">01</div>
+        <div>
+          <h3>SPIS — Smart Pharmacy Intelligence System</h3>
+          <p>A full-stack pharmacy management platform with JWT authentication and role-based access control, inventory
+            and billing management, and an analytics dashboard — paired with a Python ML microservice for demand
+            forecasting, expiry-risk analysis, and auto-reorder optimization. Architected and built collaboratively with
+            AI coding tools across the full stack.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Node.js / Express</span><span
+              class="tag">MySQL</span><span class="tag">Python / FastAPI</span><span
+              class="tag">Scikit-learn</span><span class="tag">Prophet</span><span class="tag">AI-Assisted Build</span>
+          </div>
+          <div class="tags" style="margin-top:10px;"><a href="https://github.com/Rashad-007/Pharmacy-Management-System"
+              target="_blank" rel="noopener" class="tag" style="color:var(--text);border-color:var(--line);">↗ View on
+              GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-id mono">02</div>
+        <div>
+          <h3>Algorithmic Design Lab Suite</h3>
+          <p>A complete C implementation suite covering 15 core algorithms — searching and sorting methods (selection,
+            insertion, bubble, merge, quicksort, radix, heap), graph traversal (BFS, DFS), Red-Black Tree insertion,
+            plus Kruskal's MST and Floyd-Warshall shortest paths.</p>
+          <div class="tags"><span class="tag">C</span><span class="tag">Data Structures</span><span class="tag">Graph
+              Theory</span></div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-id mono">03</div>
+        <div>
+          <h3>CKD Early Detection</h3>
+          <p>A data mining mini-project applying classification and clustering techniques to the UCI Chronic Kidney
+            Disease dataset, aimed at early-stage detection. Built in RStudio using ggplot2, rpart, e1071, arules, and
+            corrplot.</p>
+          <div class="tags"><span class="tag">Data Mining</span><span class="tag">Classification</span><span
+              class="tag">Healthcare</span></div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-id mono">04</div>
+        <div>
+          <h3>Campus Network Architecture Study</h3>
+          <p>A networking case study covering topology design and the data link, network, transport, and application
+            layers, applied to a real campus network scenario.</p>
+          <div class="tags"><span class="tag">Networking</span><span class="tag">Systems Design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-num mono">04</span>
+        <h2>Contact</h2>
+      </div>
+      <h2>Open to internships, research roles,<br>and collaborative builds.</h2>
+      <p style="color:var(--muted);max-width:520px;">The fastest way to reach me is email. I usually reply within a day
+        or two.</p>
+      <div class="contact-links">
+        <a href="mailto:yousufrashad007@gmail.com" class="btn btn-primary">yousufrashad007@gmail.com</a>
+        <a href="tel:+919092241000" class="btn btn-ghost">+91 90922 41000</a>
+        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn
+          ↗</a>
+        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Yousuf</span>
+      <span style="display:flex;gap:18px;">
+        <a href="mailto:yousufrashad007@gmail.com" style="color:var(--muted);">email</a>
+        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener" style="color:var(--muted);">github</a>
+        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener"
+          style="color:var(--muted);">linkedin</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    // Hero graph: nodes + a BFS-style traversal pulse, echoing the algorithms work
+    (function () {
+      const canvas = document.getElementById('graph');
+      const ctx = canvas.getContext('2d');
+      const hero = document.querySelector('.hero');
+      let w, h, nodes = [], edges = [], adj = [];
+
+      function resize() {
+        w = canvas.width = hero.offsetWidth;
+        h = canvas.height = hero.offsetHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      const labels = ['BFS', 'DFS', 'C', 'Python', 'R', 'sort()', 'graph', 'model', 'tree', 'SQL', 'ML', 'data'];
+
+      function buildGraph() {
+        nodes = [];
+        const cols = 5, rows = 4;
+        for (let i = 0; i < cols * rows; i++) {
+          if (Math.random() < 0.78) {
+            nodes.push({
+              x: (i % cols) * (w / cols) + (w / cols) * 0.5 + (Math.random() - 0.5) * 60,
+              y: Math.floor(i / cols) * (h / rows) + (h / rows) * 0.5 + (Math.random() - 0.5) * 50,
+              label: labels[i % labels.length]
+            });
+          }
+        }
+        edges = [];
+        adj = nodes.map(() => []);
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < w / 3.2 && Math.random() < 0.35) {
+              edges.push([i, j]);
+              adj[i].push(j); adj[j].push(i);
+            }
+          }
+        }
+      }
+      buildGraph();
+
+      // BFS traversal animation state
+      let visited, order, step = 0, frame = 0;
+      function startBFS() {
+        visited = new Array(nodes.length).fill(false);
+        order = [];
+        if (nodes.length === 0) return;
+        const start = 0;
+        let queue = [start]; visited[start] = true;
+        while (queue.length) {
+          const cur = queue.shift();
+          order.push(cur);
+          adj[cur].forEach(n => {
+            if (!visited[n]) { visited[n] = true; queue.push(n); }
+          });
+        }
+        step = 0; frame = 0;
+      }
+      startBFS();
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        const activeSet = new Set(order.slice(0, step + 1));
+
+        // edges
+        edges.forEach(([a, b]) => {
+          const A = nodes[a], B = nodes[b];
+          const lit = activeSet.has(a) && activeSet.has(b);
+          ctx.strokeStyle = lit ? 'rgba(94,234,212,0.55)' : 'rgba(138,151,163,0.15)';
+          ctx.lineWidth = lit ? 1.4 : 1;
+          ctx.beginPath();
+          ctx.moveTo(A.x, A.y);
+          ctx.lineTo(B.x, B.y);
+          ctx.stroke();
+        });
+
+        // nodes
+        nodes.forEach((n, i) => {
+          const lit = activeSet.has(i);
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, lit ? 4.5 : 3, 0, Math.PI * 2);
+          ctx.fillStyle = lit ? '#5eead4' : 'rgba(138,151,163,0.5)';
+          ctx.fill();
+          if (lit) {
+            ctx.shadowColor = '#5eead4'; ctx.shadowBlur = 8;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+          ctx.font = '11px JetBrains Mono, monospace';
+          ctx.fillStyle = lit ? 'rgba(231,236,239,0.85)' : 'rgba(138,151,163,0.4)';
+          ctx.fillText(n.label, n.x + 8, n.y - 8);
+        });
+
+        frame++;
+        if (frame % 26 === 0 && step < order.length - 1) {
+          step++;
+        }
+        if (frame % 26 === 0 && step >= order.length - 1 && frame > 26 * (order.length + 12)) {
+          buildGraph(); startBFS();
+        }
+        requestAnimationFrame(draw);
+      }
+      draw();
+    })();
+  </script>
+
+</body>
+
+</html>
