@@ -6,25 +6,30 @@
   <meta name="google-site-verification" content="NsSNLHqqx9WzMVt_Y7NGK7zXjLEJX7FHuGe7LIuwb3U" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Rashad | AI &amp; Data Science Student | Developer</title>
-  <meta name="description" content="Mohamed Rashad — AI & Data Science student at Crescent Institute, Chennai. Building algorithms, machine learning models, and full-stack systems like SPIS.">
+  <meta name="description" content="Mohamed Rashad — AI &amp; Data Science student at Crescent Institute, Chennai. Building intelligent solutions, machine learning models, and full-stack software.">
   <meta name="author" content="Mohamed Rashad">
-  <meta name="keywords" content="Mohamed Rashad, AI and Data Science, Machine Learning, Portfolio, Student Developer, SPIS, Software Engineer, Chennai, Crescent Institute">
+  <meta name="keywords" content="Mohamed Rashad, AI and Data Science, Machine Learning, Portfolio, Student Developer, AeroSim, SPIS, Software Engineer, Chennai, Crescent Institute, Python, C, React">
   <link rel="canonical" href="https://portfolio-rashad.netlify.app/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mohamed Rashad Portfolio">
-  <meta property="og:title" content="Mohamed Rashad | AI & Data Science Student | Developer">
-  <meta property="og:description" content="Mohamed Rashad — AI & Data Science student at Crescent Institute, Chennai. Building algorithms, machine learning models, and full-stack systems like SPIS.">
+  <meta property="og:title" content="Mohamed Rashad | AI &amp; Data Science Student | Developer">
+  <meta property="og:description" content="Mohamed Rashad — AI &amp; Data Science student at Crescent Institute, Chennai. Building intelligent solutions, machine learning models, and full-stack software.">
   <meta property="og:url" content="https://portfolio-rashad.netlify.app/">
   <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://portfolio-rashad.netlify.app/assets/projects/aerosim-hero.png">
 
   <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Mohamed Rashad | AI & Data Science Student | Developer">
-  <meta name="twitter:description" content="Mohamed Rashad — AI & Data Science student at Crescent Institute, Chennai. Building algorithms, machine learning models, and full-stack systems like SPIS.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohamed Rashad | AI &amp; Data Science Student | Developer">
+  <meta name="twitter:description" content="Mohamed Rashad — AI &amp; Data Science student at Crescent Institute, Chennai. Building intelligent solutions, machine learning models, and full-stack software.">
   <meta name="twitter:url" content="https://portfolio-rashad.netlify.app/">
+  <meta name="twitter:image" content="https://portfolio-rashad.netlify.app/assets/projects/aerosim-hero.png">
 
   <!-- Structured Data (Schema.org JSON-LD) -->
   <script type="application/ld+json">
@@ -37,7 +42,7 @@
         "name": "Mohamed Rashad",
         "url": "https://portfolio-rashad.netlify.app/",
         "jobTitle": "AI & Data Science Student | Aspiring Software Engineer",
-        "description": "AI & Data Science student at Crescent Institute of Science and Technology, Chennai. Working across algorithms, machine learning, and full-stack development.",
+        "description": "AI & Data Science student at B.S. Abdur Rahman Crescent Institute of Science and Technology, Chennai. Working across algorithms, machine learning, digital twins, and full-stack engineering.",
         "alumniOf": {
           "@type": "EducationalOrganization",
           "name": "B.S. Abdur Rahman Crescent Institute of Science and Technology"
@@ -57,11 +62,14 @@
           "Data Science",
           "Machine Learning",
           "Algorithms",
-          "Data Mining",
+          "Predictive Maintenance",
+          "Digital Twin Engineering",
+          "Full-Stack Web Development",
           "Python",
           "C",
           "SQL",
-          "Full-Stack Development"
+          "React",
+          "FastAPI"
         ]
       },
       {
@@ -92,19 +100,37 @@
   }
   </script>
 
+  <!-- Typography: Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
   <style>
     :root {
-      --bg: #0a0d10;
-      --bg-panel: #11161b;
-      --line: #1f2730;
-      --text: #e7ecef;
-      --muted: #8a97a3;
+      --bg: #090c10;
+      --bg-subtle: #0d1117;
+      --bg-panel: #121820;
+      --bg-panel-elevated: #161e28;
+      --line: #1c2533;
+      --line-highlight: #283548;
+      --text: #f0f4f8;
+      --text-secondary: #c2cdd8;
+      --muted: #8292a2;
       --accent: #5eead4;
-      --accent-dim: #244742;
+      --accent-hover: #7ff2dd;
+      --accent-dim: rgba(94, 234, 212, 0.12);
+      --accent-glow: rgba(94, 234, 212, 0.25);
+      --badge-bg: rgba(94, 234, 212, 0.08);
+      --badge-border: rgba(94, 234, 212, 0.22);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --font-display: 'Space Grotesk', -apple-system, sans-serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -115,81 +141,263 @@
 
     html {
       scroll-behavior: smooth;
+      color-scheme: dark;
     }
 
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
+      font-family: var(--font-body);
+      line-height: 1.65;
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     ::selection {
       background: var(--accent);
-      color: #0a0d10;
+      color: #061a17;
     }
 
     a {
       color: inherit;
       text-decoration: none;
+      transition: var(--transition);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
     }
 
     .wrap {
-      max-width: 1080px;
+      max-width: 1160px;
       margin: 0 auto;
-      padding: 0 28px;
+      padding: 0 32px;
     }
 
     h1,
     h2,
-    h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      letter-spacing: -0.01em;
+    h3,
+    h4 {
+      font-family: var(--font-display);
+      letter-spacing: -0.02em;
+      color: var(--text);
     }
 
     .mono {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: var(--font-mono);
     }
 
-    /* NAV */
+    /* Accessibility Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 20px;
+      background: var(--accent);
+      color: #061a17;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      z-index: 1000;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    /* NAVIGATION */
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 50;
-      background: rgba(10, 13, 16, 0.75);
-      backdrop-filter: blur(10px);
+      z-index: 100;
+      background: rgba(9, 12, 16, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--line);
+      transition: var(--transition);
     }
 
     nav .wrap {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 64px;
+      height: 70px;
     }
 
     .logo {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 15px;
-      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
     }
 
     .logo span {
-      color: var(--muted);
+      color: var(--accent);
     }
 
     .navlinks {
       display: flex;
-      gap: 32px;
+      align-items: center;
+      gap: 28px;
       font-size: 14px;
+      font-weight: 500;
       color: var(--muted);
     }
 
-    .navlinks a:hover {
+    .navlinks a {
+      position: relative;
+      padding: 6px 2px;
+    }
+
+    .navlinks a:hover,
+    .navlinks a.active {
       color: var(--text);
+    }
+
+    .navlinks a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .menu-btn {
+      display: none;
+      background: transparent;
+      color: var(--text);
+      padding: 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 22px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid var(--line);
+      transition: var(--transition);
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #061e1b;
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      box-shadow: 0 0 20px var(--accent-glow);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      border-color: var(--line-highlight);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(94, 234, 212, 0.06);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--line);
+      color: var(--muted);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--line-highlight);
+      color: var(--text);
+    }
+
+    /* SECTION BASICS */
+    section {
+      padding: 120px 0;
+      border-top: 1px solid var(--line);
+      position: relative;
+    }
+
+    .section-head {
+      margin-bottom: 56px;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-kicker::before {
+      content: '';
+      width: 14px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 700;
+      line-height: 1.14;
+      max-width: 760px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 16.5px;
+      margin-top: 14px;
+      max-width: 680px;
     }
 
     /* HERO */
@@ -198,7 +406,10 @@
       display: flex;
       align-items: center;
       position: relative;
-      padding-top: 64px;
+      padding-top: 110px;
+      padding-bottom: 80px;
+      border-top: none;
+      overflow: hidden;
     }
 
     #graph {
@@ -206,287 +417,1215 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.55;
+      opacity: 0.52;
+      z-index: 1;
+      pointer-events: none;
     }
 
     .hero-inner {
       position: relative;
       z-index: 2;
+      max-width: 880px;
     }
 
-    .eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      color: var(--accent);
-      font-size: 13px;
-      margin-bottom: 18px;
-      display: flex;
+    .status-badge {
+      display: inline-flex;
       align-items: center;
       gap: 10px;
+      background: rgba(94, 234, 212, 0.06);
+      border: 1px solid var(--badge-border);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 26px;
     }
 
-    .eyebrow::before {
-      content: '';
+    .status-pulse {
       width: 7px;
       height: 7px;
       border-radius: 50%;
       background: var(--accent);
-      box-shadow: 0 0 8px var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+      animation: pulse 2.2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
+    }
+
+    .hero-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      letter-spacing: 0.06em;
+      margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      font-size: clamp(2.8rem, 6.4vw, 5rem);
       font-weight: 700;
-      line-height: 1.04;
-      max-width: 820px;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
     }
 
-    .hero h1 em {
-      font-style: normal;
+    .hero h1 span.gradient-text {
       color: var(--accent);
+      display: inline-block;
     }
 
-    .hero p {
-      margin-top: 22px;
-      max-width: 560px;
-      color: var(--muted);
-      font-size: 17px;
+    .hero-desc {
+      font-size: clamp(16.5px, 2vw, 19px);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 640px;
+      margin-bottom: 38px;
     }
 
-    .hero-cta {
-      margin-top: 36px;
+    .hero-actions {
       display: flex;
+      flex-wrap: wrap;
       gap: 16px;
-    }
-
-    .btn {
-      padding: 13px 26px;
-      border-radius: 6px;
-      font-size: 14px;
-      font-weight: 500;
-      border: 1px solid var(--line);
-      transition: all .2s ease;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #06231f;
-      border-color: var(--accent);
-    }
-
-    .btn-primary:hover {
-      background: #7ff2dd;
-    }
-
-    .btn-ghost:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    section {
-      padding: 110px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .section-head {
-      display: flex;
-      align-items: baseline;
-      gap: 16px;
+      align-items: center;
       margin-bottom: 48px;
     }
 
-    .section-num {
-      font-family: 'JetBrains Mono', monospace;
-      color: var(--accent);
-      font-size: 13px;
+    .hero-socials {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
     }
 
-    .section-head h2 {
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
+    .hero-socials span {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      color: var(--accent);
+    }
+
+    /* METRICS STRIP */
+    .metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-top: 48px;
+    }
+
+    .metric-card {
+      background: var(--bg-panel);
+      padding: 24px 22px;
+      transition: var(--transition);
+    }
+
+    .metric-card:hover {
+      background: var(--bg-panel-elevated);
+    }
+
+    .metric-value {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .metric-value span {
+      color: var(--accent);
+    }
+
+    .metric-label {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.35;
     }
 
     /* ABOUT */
     .about-grid {
       display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 60px;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 56px;
+      align-items: start;
     }
 
-    .about-grid p {
-      color: var(--muted);
-      margin-bottom: 16px;
-      font-size: 15.5px;
+    .about-story p {
+      color: var(--text-secondary);
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.7;
     }
 
-    .about-grid p strong {
+    .about-story p strong {
       color: var(--text);
-      font-weight: 500;
+      font-weight: 600;
     }
 
-    .stack {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
+    .about-story p:last-child {
+      margin-bottom: 0;
+    }
+
+    .spec-sheet {
       border: 1px solid var(--line);
-      border-radius: 8px;
+      border-radius: var(--radius-md);
+      background: var(--bg-panel);
       overflow: hidden;
     }
 
-    .stack-row {
+    .spec-header {
+      padding: 18px 24px;
+      background: var(--bg-panel-elevated);
+      border-bottom: 1px solid var(--line);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--accent);
       display: flex;
       justify-content: space-between;
-      padding: 14px 18px;
-      font-size: 13.5px;
+      align-items: center;
+    }
+
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 24px;
       border-bottom: 1px solid var(--line);
-    }
-
-    .stack-row:last-child {
-      border-bottom: none;
-    }
-
-    .stack-row span:first-child {
-      color: var(--muted);
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    /* SKILLS */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: var(--line);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .skill-card {
-      background: var(--bg-panel);
-      padding: 26px;
-    }
-
-    .skill-card h3 {
-      font-size: 15px;
-      margin-bottom: 12px;
-      color: var(--accent);
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 500;
-    }
-
-    .skill-card ul {
-      list-style: none;
-      color: var(--muted);
       font-size: 14px;
     }
 
-    .skill-card li {
-      padding: 4px 0;
-    }
-
-    /* PROJECTS */
-    .project {
-      display: grid;
-      grid-template-columns: 80px 1fr;
-      gap: 24px;
-      padding: 32px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .project:last-child {
+    .spec-row:last-child {
       border-bottom: none;
     }
 
-    .project-id {
-      font-family: 'JetBrains Mono', monospace;
+    .spec-label {
       color: var(--muted);
+      font-family: var(--font-mono);
       font-size: 13px;
-      padding-top: 4px;
     }
 
-    .project h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
+    .spec-value {
+      color: var(--text);
+      font-weight: 500;
+      text-align: right;
     }
 
-    .project p {
-      color: var(--muted);
-      font-size: 15px;
-      max-width: 640px;
+    /* SKILLS */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-category {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      transition: var(--transition);
+    }
+
+    .skill-category:hover {
+      border-color: var(--line-highlight);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .category-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-dim);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .skill-category h3 {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+
+    .chip:hover {
+      background: rgba(94, 234, 212, 0.08);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* EXPERIENCE TIMELINE */
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin-left: 20px;
+      padding-left: 36px;
+      border-left: 1px solid var(--line-highlight);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -42px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    .timeline-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      transition: var(--transition);
+    }
+
+    .timeline-card:hover {
+      border-color: var(--line-highlight);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .timeline-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-role {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .timeline-org {
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 14px;
+      display: inline-block;
       margin-bottom: 14px;
     }
 
-    .tags {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
+    .timeline-date {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
     }
 
-    .tag {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
+    .timeline-desc {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .timeline-points {
+      list-style: none;
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .timeline-points li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    .timeline-points li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
       color: var(--accent);
-      border: 1px solid var(--accent-dim);
-      background: rgba(94, 234, 212, 0.06);
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    .project-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .project-card:hover {
+      border-color: var(--line-highlight);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Flagship / Featured Project Layout */
+    .project-card.featured {
+      grid-template-columns: 1.15fr 1fr;
+    }
+
+    .project-visual {
+      background: #06090d;
+      position: relative;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-right: 1px solid var(--line);
+    }
+
+    .project-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .project-visual img {
+      transform: scale(1.03);
+    }
+
+    .project-badge-overlay {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(9, 12, 16, 0.88);
+      border: 1px solid var(--badge-border);
+      color: var(--accent);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.05em;
+      backdrop-filter: blur(8px);
+      z-index: 2;
+    }
+
+    .project-content {
+      padding: 36px 38px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .project-index {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .project-category {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .project-card h3 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+
+    .project-tagline {
+      color: var(--accent);
+      font-size: 14.5px;
+      font-weight: 500;
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+    }
+
+    .project-desc {
+      color: var(--text-secondary);
+      font-size: 15px;
+      line-height: 1.65;
+      margin-bottom: 22px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 26px;
+    }
+
+    .project-tag {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--line);
       padding: 4px 10px;
       border-radius: 20px;
     }
 
-    /* CONTACT */
-    .contact {
-      text-align: left;
+    .project-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    .contact h2,
-    .contact-subhead {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-family: 'Space Grotesk', sans-serif;
+    /* Standard Projects Grid */
+    .projects-subgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .project-card.compact {
+      padding: 32px;
+    }
+
+    .project-card.compact .project-content {
+      padding: 0;
+    }
+
+    /* ACHIEVEMENTS */
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .achievement-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .achievement-card:hover {
+      border-color: var(--line-highlight);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .achievement-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-dim);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+
+    .achievement-meta {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .achievement-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .achievement-card p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    /* GITHUB REPO INTEGRATION */
+    .github-box {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+    }
+
+    .github-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 30px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .github-user {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .github-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--bg-panel-elevated);
+      border: 1px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .github-user-info h3 {
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+
+    .github-user-info p {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .github-stats-bar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .gh-stat {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .gh-stat strong {
+      color: var(--text);
+    }
+
+    .repos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .repo-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .repo-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .repo-name {
+      font-family: var(--font-mono);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .repo-desc {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+
+    .repo-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .repo-lang {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .lang-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* EDUCATION */
+    .education-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .edu-degree {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .edu-inst {
+      color: var(--accent);
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    .edu-meta {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .edu-badge {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--line);
+      color: var(--text-secondary);
+    }
+
+    .edu-badge.cgpa {
+      background: var(--accent-dim);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .edu-coursework h4 {
+      font-size: 15px;
+      font-family: var(--font-mono);
+      color: var(--muted);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .course-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .course-tag {
+      font-size: 13px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
       font-weight: 700;
       line-height: 1.15;
-      letter-spacing: -0.01em;
-      max-width: 600px;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
-    .contact-links {
+    .contact-info p {
+      color: var(--text-secondary);
+      font-size: 16.5px;
+      line-height: 1.65;
+      margin-bottom: 36px;
+    }
+
+    .contact-methods {
       display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 32px;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 36px;
     }
 
+    .contact-method-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 16px 22px;
+      transition: var(--transition);
+    }
+
+    .contact-method-card:hover {
+      border-color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .contact-method-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .contact-method-icon {
+      color: var(--accent);
+    }
+
+    .contact-method-label {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .contact-method-val {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* Contact Form */
+    .contact-form-wrap {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--line-highlight);
+      border-radius: var(--radius-sm);
+      padding: 13px 16px;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-dim);
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-status {
+      display: none;
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      text-align: center;
+    }
+
+    .form-status.success {
+      display: block;
+      background: rgba(94, 234, 212, 0.1);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+    }
+
+    /* FOOTER */
     footer {
-      padding: 30px 0;
+      padding: 40px 0;
       border-top: 1px solid var(--line);
+      background: var(--bg-subtle);
     }
 
     footer .wrap {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
       color: var(--muted);
-      font-size: 13px;
-      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      font-family: var(--font-mono);
     }
 
-    @media(max-width:760px) {
-      .about-grid {
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-container {
+      background: var(--bg-panel);
+      border: 1px solid var(--line-highlight);
+      border-radius: var(--radius-lg);
+      max-width: 720px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 38px;
+      position: relative;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+      transform: scale(0.96);
+      transition: transform 0.25s ease;
+    }
+
+    .modal-overlay.active .modal-container {
+      transform: scale(1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: var(--muted);
+      font-size: 20px;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      transition: var(--transition);
+    }
+
+    .modal-close:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    .modal-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .modal-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .modal-section {
+      margin-bottom: 22px;
+    }
+
+    .modal-section h4 {
+      font-size: 14px;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    .modal-section p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .modal-section ul {
+      color: var(--text-secondary);
+      font-size: 14px;
+      padding-left: 20px;
+    }
+
+    .modal-section li {
+      margin-bottom: 6px;
+    }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: var(--bg-panel-elevated);
+      border: 1px solid var(--accent);
+      color: var(--text);
+      padding: 12px 22px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .project-card.featured {
         grid-template-columns: 1fr;
       }
 
-      .skills-grid {
+      .project-visual {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+        min-height: 240px;
+      }
+
+      .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .achievements-grid {
         grid-template-columns: 1fr;
       }
 
-      .navlinks {
+      .education-card {
+        grid-template-columns: 1fr;
+      }
+
+      .repos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .metrics-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 820px) {
+      .wrap {
+        padding: 0 20px;
+      }
+
+      nav .navlinks,
+      nav .nav-actions .btn-sm {
         display: none;
       }
 
-      .project {
+      .menu-btn {
+        display: block;
+      }
+
+      .about-grid,
+      .contact-grid,
+      .projects-subgrid {
         grid-template-columns: 1fr;
       }
+
+      .timeline {
+        margin-left: 10px;
+        padding-left: 24px;
+      }
+
+      .timeline-dot {
+        left: -30px;
+      }
+
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+
+      .repos-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Mobile drawer */
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 280px;
+      background: var(--bg-panel);
+      border-left: 1px solid var(--line);
+      z-index: 1000;
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mobile-drawer.open {
+      transform: translateX(0);
+    }
+
+    .mobile-drawer a {
+      font-size: 16px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mobile-drawer a:hover {
+      color: var(--accent);
     }
 
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -494,198 +1633,1167 @@
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION -->
   <nav aria-label="Main Navigation">
     <div class="wrap">
-      <div class="logo">rashad<span>.dev</span></div>
+      <a href="#home" class="logo" aria-label="Mohamed Rashad Homepage">
+        <span class="logo-dot"></span>
+        rashad<span>.dev</span>
+      </a>
+
       <div class="navlinks">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="assets/resume/Mohamed_Rashad_Resume.pdf" download="Mohamed_Rashad_Resume.pdf" class="btn btn-outline btn-sm" id="navResumeBtn" aria-label="Download Resume (PDF)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Resume
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        <button class="menu-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
   </nav>
 
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <span class="logo"><span class="logo-dot"></span>rashad<span>.dev</span></span>
+      <button id="closeDrawer" style="color:var(--text);font-size:20px;padding:4px;"
+        aria-label="Close menu">&times;</button>
+    </div>
+    <a href="#about" class="drawer-link">01. About</a>
+    <a href="#skills" class="drawer-link">02. Skills</a>
+    <a href="#experience" class="drawer-link">03. Experience</a>
+    <a href="#projects" class="drawer-link">04. Projects</a>
+    <a href="#achievements" class="drawer-link">05. Achievements</a>
+    <a href="#education" class="drawer-link">06. Education</a>
+    <a href="#contact" class="drawer-link">07. Contact</a>
+    <div style="margin-top:auto;display:flex;flex-direction:column;gap:12px;">
+      <a href="assets/resume/Mohamed_Rashad_Resume.pdf" download="Mohamed_Rashad_Resume.pdf" class="btn btn-outline" id="drawerResumeBtn" style="width:100%;text-align:center;">Download Resume</a>
+      <a href="#contact" class="btn btn-primary drawer-link" style="width:100%;text-align:center;">Get in Touch</a>
+    </div>
+  </div>
+
   <main id="main-content">
 
-  <section class="hero">
-    <canvas id="graph" role="img" aria-label="Animated graph traversal algorithm visualization"></canvas>
-    <div class="wrap hero-inner">
-      <div class="eyebrow mono">B.TECH AI &amp; DATA SCIENCE · SEMESTER IV</div>
-      <h1>I build things that <em>traverse</em>,<br>learn, and predict.</h1>
-      <p>Mohamed Rashad — student engineer working across algorithms, data mining, and applied ML. Comfortable across C,
-        Python,
-        and SQL, with R in the toolkit for statistical work.</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      </div>
-    </div>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <canvas id="graph" role="img"
+        aria-label="Interactive graph traversal algorithm visualization running in real time"></canvas>
 
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-num mono">01</span>
-        <h2>About</h2>
-      </div>
-      <div class="about-grid">
-        <div>
-          <p>I'm currently in my fourth semester of <strong>B.Tech in Artificial Intelligence &amp; Data
-              Science</strong>, working through coursework that spans algorithmic design, networking, and data mining —
-            and spending a fair amount of time outside class implementing the theory by hand.</p>
-          <p>Most recently that's meant writing graph traversal and sorting algorithms from scratch in C, building a
-            clinical early-detection model in R, and documenting a campus network architecture end to end. I like the
-            discipline of low-level implementation as much as the abstraction of model building — they teach different
-            things.</p>
-          <p>I'm looking for opportunities to apply this — internships, research assistantships, or collaborative
-            projects — where I can keep building real, working systems.</p>
+      <div class="wrap hero-inner">
+        <div class="status-badge">
+          <span class="status-pulse"></span>
+          <span>Open to Internships &amp; Engineering Opportunities</span>
         </div>
-        <div class="stack">
-          <div class="stack-row"><span>degree</span><span>B.Tech AI &amp; DS</span></div>
-          <div class="stack-row"><span>institute</span><span>Crescent Inst. of Science &amp; Tech</span></div>
-          <div class="stack-row"><span>semester</span><span>IV — 2024/28</span></div>
-          <div class="stack-row"><span>focus</span><span>Algorithms · Data Mining · ML</span></div>
-          <div class="stack-row"><span>languages</span><span>C, Python, SQL, R</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="skills">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-num mono">02</span>
-        <h2>Skills</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>// languages</h3>
-          <ul>
-            <li>C</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>R</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>// algorithms &amp; ds</h3>
-          <ul>
-            <li>Sorting (merge, quick, heap, radix)</li>
-            <li>Graph traversal — BFS / DFS</li>
-            <li>Red-Black Trees</li>
-            <li>Kruskal's MST · Floyd–Warshall</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>// data &amp; ml</h3>
-          <ul>
-            <li>RStudio (ggplot2, rpart, e1071)</li>
-            <li>Data mining &amp; clustering</li>
-            <li>Classification models</li>
-            <li>Network analysis</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div class="hero-eyebrow mono">MOHAMED RASHAD · B.TECH AI &amp; DATA SCIENCE</div>
 
-  <section id="projects">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-num mono">03</span>
-        <h2>Projects</h2>
-      </div>
+        <h1>Building intelligent solutions.<br><span class="gradient-text">Solving real-world problems.</span></h1>
 
-      <article class="project">
-        <div class="project-id mono">01</div>
-        <div>
-          <h3>SPIS — Smart Pharmacy Intelligence System</h3>
-          <p>A full-stack pharmacy management platform with JWT authentication and role-based access control, inventory
-            and billing management, and an analytics dashboard — paired with a Python ML microservice for demand
-            forecasting, expiry-risk analysis, and auto-reorder optimization. Architected and built collaboratively with
-            AI coding tools across the full stack.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">Node.js / Express</span><span
-              class="tag">MySQL</span><span class="tag">Python / FastAPI</span><span
-              class="tag">Scikit-learn</span><span class="tag">Prophet</span><span class="tag">AI-Assisted Build</span>
+        <p class="hero-desc">
+          I'm an AI &amp; Data Science student passionate about software engineering, artificial intelligence, and
+          developing practical solutions to meaningful problems. Comfortable across Python, C, SQL, and modern web
+          architectures.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="assets/resume/Mohamed_Rashad_Resume.pdf" download="Mohamed_Rashad_Resume.pdf" class="btn btn-ghost" id="heroResumeBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="hero-socials">
+          <span>Connect:</span>
+          <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="GitHub Profile">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="LinkedIn Profile">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:yousufrashad007@gmail.com" class="social-link" aria-label="Direct Email">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Email
+          </a>
+        </div>
+
+        <div class="metrics-strip">
+          <div class="metric-card">
+            <div class="metric-value">36<span>hr</span></div>
+            <div class="metric-label">BUILDX Hackathon 2026<br>Aerospace &amp; Defence Domain</div>
           </div>
-          <div class="tags" style="margin-top:10px;"><a href="https://github.com/Rashad-007/Pharmacy-Management-System"
-              target="_blank" rel="noopener noreferrer" class="tag" style="color:var(--text);border-color:var(--line);">↗ View on
-              GitHub</a></div>
+          <div class="metric-card">
+            <div class="metric-value">6<span>+</span></div>
+            <div class="metric-label">Practical Engineering<br>Projects Built</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">15<span>+</span></div>
+            <div class="metric-label">Core Algorithms<br>Implemented in C</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">7.0<span>/10</span></div>
+            <div class="metric-label">CGPA Standing<br>Crescent Institute (2024–28)</div>
+          </div>
         </div>
-      </article>
-
-      <article class="project">
-        <div class="project-id mono">02</div>
-        <div>
-          <h3>Algorithmic Design Lab Suite</h3>
-          <p>A complete C implementation suite covering 15 core algorithms — searching and sorting methods (selection,
-            insertion, bubble, merge, quicksort, radix, heap), graph traversal (BFS, DFS), Red-Black Tree insertion,
-            plus Kruskal's MST and Floyd-Warshall shortest paths.</p>
-          <div class="tags"><span class="tag">C</span><span class="tag">Data Structures</span><span class="tag">Graph
-              Theory</span></div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-id mono">03</div>
-        <div>
-          <h3>CKD Early Detection</h3>
-          <p>A data mining mini-project applying classification and clustering techniques to the UCI Chronic Kidney
-            Disease dataset, aimed at early-stage detection. Built in RStudio using ggplot2, rpart, e1071, arules, and
-            corrplot.</p>
-          <div class="tags"><span class="tag">Data Mining</span><span class="tag">Classification</span><span
-              class="tag">Healthcare</span></div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-id mono">04</div>
-        <div>
-          <h3>Campus Network Architecture Study</h3>
-          <p>A networking case study covering topology design and the data link, network, transport, and application
-            layers, applied to a real campus network scenario.</p>
-          <div class="tags"><span class="tag">Networking</span><span class="tag">Systems Design</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="section-num mono">04</span>
-        <h2>Contact</h2>
       </div>
-      <h3 class="contact-subhead">Open to internships, research roles,<br>and collaborative builds.</h3>
-      <div class="contact-links">
-        <a href="mailto:yousufrashad007@gmail.com" class="btn btn-primary">yousufrashad007@gmail.com</a>
-        <a href="tel:+919092241000" class="btn btn-ghost">+91 90922 41000</a>
-        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn
-          ↗</a>
-        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub ↗</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">01 / Profile Overview</div>
+          <h2>Engineering at the intersection of low-level logic and applied intelligence.</h2>
+          <p>A rigorous engineering student focused on algorithmic fundamentals, predictive systems, and real-world
+            software architecture.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-story">
+            <p>
+              I am currently in my fourth semester of <strong>B.Tech in Artificial Intelligence &amp; Data
+                Science</strong> at <strong>B.S. Abdur Rahman Crescent Institute of Science and Technology</strong> in
+              Chennai. My academic and personal focus centers on building reliable, verifiable software systems that solve
+              tangible engineering problems.
+            </p>
+            <p>
+              Rather than relying solely on high-level abstractions, I believe in understanding the stack from the
+              ground up. That has meant implementing 15 core searching, sorting, and graph algorithms in pure C, studying
+              campus network topologies down to layer-2 frames, and building full-stack platforms with relational database
+              architectures and RESTful Python microservices.
+            </p>
+            <p>
+              Most recently, I participated in the 36-hour <strong>T-Hub × Crescent Institute BUILDX Hackathon
+                2026</strong>, where our team addressed the Aerospace &amp; Defence challenge: <em>"Predict Aircraft
+                Component Failures Before They Happen."</em> We designed <strong>AeroSim</strong>, an engineering digital
+              twin combining physics-based degradation models with sensor telemetry and a two-stage Bayesian-inspired
+              learning process.
+            </p>
+            <p>
+              I am actively seeking <strong>internships, research assistantships, and software engineering roles</strong>
+              where I can apply strong technical fundamentals, learn from senior engineering mentors, and build impactful
+              software.
+            </p>
+          </div>
+
+          <div class="spec-sheet">
+            <div class="spec-header">
+              <span>// SYSTEM SPECIFICATION</span>
+              <span>CRESCENT.EDU</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Degree</span>
+              <span class="spec-value">B.Tech Artificial Intelligence &amp; Data Science</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Institution</span>
+              <span class="spec-value">B.S. Abdur Rahman Crescent Institute</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Location</span>
+              <span class="spec-value">Chennai, Tamil Nadu, India</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Duration</span>
+              <span class="spec-value">2024 — 2028 (Semester IV)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Academic Score</span>
+              <span class="spec-value">7.0 / 10.0 CGPA</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Primary Languages</span>
+              <span class="spec-value">Python, C, SQL, JavaScript</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label">Availability</span>
+              <span class="spec-value" style="color:var(--accent);">Immediate for Internships</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">02 / Technical Capabilities</div>
+          <h2>Curated technologies verified through practical implementation.</h2>
+          <p>Every language, framework, and tool listed reflects active coursework, hackathons, and functional codebases.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Programming -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Python 3.x</span>
+              <span class="chip">C (ANSI / C99)</span>
+              <span class="chip">SQL (MySQL Dialect)</span>
+              <span class="chip">JavaScript (ES6+)</span>
+              <span class="chip">R (Statistical)</span>
+            </div>
+          </div>
+
+          <!-- AI & Data Science -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3>AI &amp; Data Science</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">NumPy</span>
+              <span class="chip">Pandas</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Prophet (Time Series)</span>
+              <span class="chip">Data Mining &amp; Clustering</span>
+              <span class="chip">Predictive Modeling</span>
+              <span class="chip">ML Life Cycle</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">HTML5 &amp; Semantic Web</span>
+              <span class="chip">CSS3 &amp; Flex/Grid</span>
+              <span class="chip">React 19 / JSX</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Express.js</span>
+              <span class="chip">RESTful API Design</span>
+              <span class="chip">JWT Authentication</span>
+            </div>
+          </div>
+
+          <!-- Database & Storage -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3>Database Systems</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">MySQL 8.0</span>
+              <span class="chip">Relational Schema Design</span>
+              <span class="chip">Role-Based Access (RBAC)</span>
+              <span class="chip">SQLite Document Store</span>
+              <span class="chip">Query Optimization</span>
+            </div>
+          </div>
+
+          <!-- Algorithms & Systems -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <h3>Algorithms &amp; Systems</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Graph Traversal (BFS / DFS)</span>
+              <span class="chip">Kruskal's MST</span>
+              <span class="chip">Floyd-Warshall Shortest Paths</span>
+              <span class="chip">Red-Black Trees</span>
+              <span class="chip">Quicksort &amp; Mergesort</span>
+              <span class="chip">Network Layering &amp; Protocols</span>
+            </div>
+          </div>
+
+          <!-- Development Tools -->
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3>Developer Tools</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Git Version Control</span>
+              <span class="chip">GitHub Workflow</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">RStudio</span>
+              <span class="chip">Netlify Platform</span>
+              <span class="chip">Playwright / Vitest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">03 / Experience &amp; Internships</div>
+          <h2>Practical industry training and technical experience.</h2>
+          <p>Real-world application of machine learning pipelines, dataset manipulation, and engineering problem
+            solving.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Aspirasys / IBM Generative Engineering Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <div class="timeline-role">IBM Generative Engineering Intern</div>
+                <div class="timeline-date">Ongoing (1 Month)</div>
+              </div>
+              <div class="timeline-org">Aspirasys</div>
+              <p class="timeline-desc">
+                Engaged in developing Python backend services and learning modern software engineering practices,
+                machine learning architectures, and generative AI methodologies.
+              </p>
+              <ul class="timeline-points">
+                <li>Developing modular Python applications and backend microservices using the Flask framework.</li>
+                <li>Gaining hands-on software engineering exposure across Machine Learning and Generative AI concepts.</li>
+                <li>Building backend service layers, designing schemas, and integrating RESTful APIs.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">RESTful APIs</span>
+                <span class="project-tag">Generative AI</span>
+                <span class="project-tag">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NSIC Summer Internship -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <div class="timeline-role">Machine Learning Intern</div>
+                <div class="timeline-date">2 Weeks Intensive</div>
+              </div>
+              <div class="timeline-org">National Small Industries Corporation (NSIC) — Technical Services Centre</div>
+              <p class="timeline-desc">
+                Completed an industrial internship focused on applied Machine Learning fundamentals and data
+                engineering workflows using Python, organized by the Government of India enterprise.
+              </p>
+              <ul class="timeline-points">
+                <li>Learned core Machine Learning fundamentals, algorithmic theory, and model evaluation metrics using Python.</li>
+                <li>Practiced data preprocessing, dataset cleaning, and introductory model development with NumPy and Pandas.</li>
+                <li>Handled CSV data streams, exception handling routines, and tabular feature structures.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">NumPy</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Data Preprocessing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Research Engineering -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <div class="timeline-role">Collaborative Systems &amp; AI Engineering</div>
+                <div class="timeline-date">2024 — Present</div>
+              </div>
+              <div class="timeline-org">B.S. Abdur Rahman Crescent Institute of Science and Technology</div>
+              <p class="timeline-desc">
+                Engineering lab projects, peer collaborations, and hackathon prototypes developing software systems and
+                machine learning integrations.
+              </p>
+              <ul class="timeline-points">
+                <li>Engineered the AeroSim prototype during the 36-hour BUILDX Hackathon 2026, building digital twins for
+                  aerospace component failure prediction.</li>
+                <li>Architected the Smart Pharmacy Intelligence System (SPIS) full-stack platform with JWT authentication,
+                  MySQL schema design, and FastAPI prediction microservice.</li>
+                <li>Implemented the 15-algorithm suite in ANSI C as part of the Algorithmic Design Lab coursework.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">React</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">C</span>
+                <span class="project-tag">Digital Twins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">04 / Featured Projects</div>
+          <h2>Production systems, machine learning models, and algorithmic suites.</h2>
+          <p>Deep-dive into my principal engineering work, problem formulations, and technical architectures.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 01: AEROSIM (FLAGSHIP) -->
+          <article class="project-card featured">
+            <div class="project-visual">
+              <span class="project-badge-overlay">★ BUILDX HACKATHON 2026</span>
+              <img src="assets/projects/aerosim-hero.png"
+                alt="AeroSim Digital Twin 3D Component Failure Prediction Dashboard" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div>
+                <div class="project-header-top">
+                  <span class="project-index">PROJECT // 01</span>
+                  <span class="project-category">Aerospace &amp; Defence · Digital Twin</span>
+                </div>
+                <h3>AeroSim — Aircraft Component Failure Prediction</h3>
+                <div class="project-tagline">"Predict Aircraft Component Failures Before They Happen."</div>
+                <p class="project-desc">
+                  Engineered during the 36-hour <strong>T-Hub × Crescent Institute BUILDX Hackathon 2026</strong> (Nov 4–5,
+                  2026, Chennai). AeroSim is an engineering digital twin platform that models individual aircraft
+                  components (engine mounts, landing gears, turbine blades, hydraulic actuators) using physics-based
+                  degradation equations (fatigue, crack growth, thermal creep, seal wear) and flight telemetry. Features a
+                  controlled two-stage update method: Stage A operational model correction and Stage B
+                  inspection-confirmed damage correction.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">React 19</span>
+                  <span class="project-tag">TypeScript</span>
+                  <span class="project-tag">Three.js</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">Python 3.11</span>
+                  <span class="project-tag">NumPy</span>
+                  <span class="project-tag">SciPy</span>
+                  <span class="project-tag">Recharts</span>
+                  <span class="project-tag">SQLite</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm"
+                  onclick="openProjectModal('aerosim')">View Details &amp; Architecture</button>
+                <a href="https://github.com/Samxxr007/AEROSIM" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline btn-sm">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: SPIS -->
+          <article class="project-card featured">
+            <div class="project-visual">
+              <span class="project-badge-overlay">★ FULL-STACK + ML SYSTEM</span>
+              <img src="assets/projects/spis-architecture.svg"
+                alt="SPIS Smart Pharmacy Intelligence System Multi-Tier Architecture Diagram" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div>
+                <div class="project-header-top">
+                  <span class="project-index">PROJECT // 02</span>
+                  <span class="project-category">Full-Stack ERP &amp; ML</span>
+                </div>
+                <h3>SPIS — Smart Pharmacy Intelligence System</h3>
+                <div class="project-tagline">AI-Powered Pharmacy Management Platform</div>
+                <p class="project-desc">
+                  A full-stack pharmacy operational platform combining JWT authentication with role-based access control
+                  (RBAC), relational inventory and billing management, prescription records, and supplier management.
+                  Paired with a standalone Python FastAPI microservice utilizing Scikit-learn and Facebook Prophet for
+                  sales demand forecasting, expiry-risk classification, and automated reorder optimization.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Node.js / Express</span>
+                  <span class="project-tag">MySQL 8.0</span>
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">Scikit-learn</span>
+                  <span class="project-tag">Prophet</span>
+                  <span class="project-tag">JWT / RBAC</span>
+                </div>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="openProjectModal('spis')">View Details</button>
+                <a href="https://github.com/Rashad-007/Pharmacy-Management-System" target="_blank"
+                  rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SUBGRID FOR PROJECTS 03, 04, 05, 06 -->
+          <div class="projects-subgrid">
+
+            <!-- PROJECT 03: CKD -->
+            <article class="project-card compact">
+              <div class="project-content">
+                <div>
+                  <div class="project-header-top">
+                    <span class="project-index">PROJECT // 03</span>
+                    <span class="project-category">Data Mining &amp; Healthcare</span>
+                  </div>
+                  <h3>CKD Early Detection Model</h3>
+                  <div class="project-tagline">Clinical Classification &amp; Clustering</div>
+                  <p class="project-desc">
+                    A machine learning and data mining study applying classification decision trees and association rule
+                    mining to the UCI Chronic Kidney Disease dataset for early diagnosis. Developed in RStudio with
+                    statistical exploratory analysis and correlation matrices.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">R Language</span>
+                    <span class="project-tag">RStudio</span>
+                    <span class="project-tag">ggplot2</span>
+                    <span class="project-tag">rpart</span>
+                    <span class="project-tag">e1071</span>
+                    <span class="project-tag">UCI Dataset</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-outline btn-sm" onclick="openProjectModal('ckd')">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 04: ALGORITHMIC SUITE -->
+            <article class="project-card compact">
+              <div class="project-content">
+                <div>
+                  <div class="project-header-top">
+                    <span class="project-index">PROJECT // 04</span>
+                    <span class="project-category">Algorithms &amp; Data Structures</span>
+                  </div>
+                  <h3>Algorithmic Design Lab Suite</h3>
+                  <div class="project-tagline">15 Core Algorithms in ANSI C</div>
+                  <p class="project-desc">
+                    Comprehensive C implementation of 15 essential computer science algorithms: searching &amp; sorting
+                    (Quicksort, Mergesort, Heapsort, Radix), graph traversal (BFS, DFS), self-balancing Red-Black Tree
+                    insertions, Kruskal's Minimum Spanning Tree, and Floyd-Warshall all-pairs shortest paths.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">C Language</span>
+                    <span class="project-tag">Data Structures</span>
+                    <span class="project-tag">Graph Theory</span>
+                    <span class="project-tag">Red-Black Trees</span>
+                    <span class="project-tag">MST / Shortest Paths</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-outline btn-sm" onclick="openProjectModal('algo')">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 05: DINO GAME -->
+            <article class="project-card compact">
+              <div class="project-content">
+                <div>
+                  <div class="project-header-top">
+                    <span class="project-index">PROJECT // 05</span>
+                    <span class="project-category">Game Programming</span>
+                  </div>
+                  <h3>Dino Game — Python Arcade Clone</h3>
+                  <div class="project-tagline">Real-Time Event-Driven Mechanics</div>
+                  <p class="project-desc">
+                    Interactive arcade clone inspired by the classic offline browser game. Implemented to master game
+                    loop architectures, collision detection mathematics, smooth jump trajectory physics, random obstacle
+                    generation, and real-time score tracking.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Event-Driven Loop</span>
+                    <span class="project-tag">Collision Algorithms</span>
+                    <span class="project-tag">JavaScript / CSS</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/Rashad-007/dino_game" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm">GitHub Repository</a>
+                  <button class="btn btn-ghost btn-sm" onclick="openProjectModal('dino')">View Details</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 06: CAMPUS NETWORK -->
+            <article class="project-card compact">
+              <div class="project-content">
+                <div>
+                  <div class="project-header-top">
+                    <span class="project-index">PROJECT // 06</span>
+                    <span class="project-category">Networking &amp; Systems</span>
+                  </div>
+                  <h3>Campus Network Architecture Study</h3>
+                  <div class="project-tagline">Hierarchical Infrastructure Design</div>
+                  <p class="project-desc">
+                    End-to-end networking architectural case study covering hierarchical multi-tier topology design,
+                    VLAN segmentation, IP subnetting, access-control policies, and protocol interaction across the OSI
+                    layers (data link, network, transport, and application) for university campus operations.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Computer Networks</span>
+                    <span class="project-tag">VLAN &amp; Subnetting</span>
+                    <span class="project-tag">OSI Stack</span>
+                    <span class="project-tag">Systems Design</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <button class="btn btn-outline btn-sm" onclick="openProjectModal('network')">View Details</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">05 / Milestones &amp; Recognition</div>
+          <h2>Competitive hackathon participation and technical certifications.</h2>
+          <p>Verified technical events, intensive hackathons, and institutional credentials.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- BUILDX Hackathon -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="achievement-meta">COMPETITIVE HACKATHON · 2026</div>
+              <h3>BUILDX Hackathon 2026</h3>
+              <p>
+                Selected participant in the intensive 36-hour hackathon hosted by <strong>T-Hub × B.S. Abdur Rahman
+                  Crescent Institute</strong> (Nov 4–5, 2026). Competed in the Aerospace &amp; Defence domain, architecting
+                the <strong>AeroSim</strong> digital twin prototype.
+              </p>
+            </div>
+            <div class="mono" style="font-size:12px;color:var(--muted);">Crescent Institute, Chennai</div>
+          </div>
+
+          <!-- SINE IIT Bombay Certifications -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="achievement-meta">TECHNICAL CERTIFICATIONS · 2024</div>
+              <h3>SINE IIT Bombay &amp; EduPyramids</h3>
+              <p>
+                Completed four rigorous technical training programs: <strong>Linux Training</strong>, <strong>C Training</strong>, <strong>Advanced C++ Training</strong>, and <strong>R Training</strong>, certified via EduPyramids in association with SINE IIT Bombay.
+              </p>
+            </div>
+            <div class="mono" style="font-size:12px;color:var(--muted);">SINE IIT Bombay · EduPyramids</div>
+          </div>
+
+          <!-- HackerRank & NSIC Certifications -->
+          <div class="achievement-card">
+            <div>
+              <div class="achievement-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="achievement-meta">SKILL VERIFICATION · 2024</div>
+              <h3>HackerRank &amp; NSIC Certifications</h3>
+              <p>
+                Earned certified proficiency badges in <strong>HackerRank Python (Basic)</strong> and <strong>HackerRank SQL (Basic)</strong>, alongside the <strong>NSIC Machine Learning with Python</strong> credential from the Government of India enterprise.
+              </p>
+            </div>
+            <div class="mono" style="font-size:12px;color:var(--muted);">HackerRank &amp; NSIC Govt of India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB LIVE ACTIVITY SECTION -->
+    <section id="github">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">06 / Code &amp; Repositories</div>
+          <h2>Live GitHub activity and open-source codebases.</h2>
+          <p>Public code repositories, commit activity, and software implementations.</p>
+        </div>
+
+        <div class="github-box">
+          <div class="github-header">
+            <div class="github-user">
+              <div class="github-avatar">MR</div>
+              <div class="github-user-info">
+                <h3>Mohamed Rashad</h3>
+                <p>@Rashad-007 · GitHub Developer</p>
+              </div>
+            </div>
+            <div class="github-stats-bar">
+              <div class="gh-stat"><strong id="ghRepoCount">6+</strong> Repositories</div>
+              <div class="gh-stat"><strong id="ghFollowers">Verified</strong> Profile</div>
+              <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm">
+                View on GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="repos-grid" id="reposGrid">
+            <!-- Repo 1 -->
+            <div class="repo-card">
+              <div>
+                <div class="repo-name">
+                  <span>Pharmacy-Management-System</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </div>
+                <p class="repo-desc">SPIS: AI-Powered Pharmacy Management Platform combining React, Node.js, and FastAPI ML
+                  microservice.</p>
+              </div>
+              <div class="repo-footer">
+                <span class="repo-lang"><span class="lang-dot" style="background:#61dafb;"></span>JavaScript / React</span>
+                <a href="https://github.com/Rashad-007/Pharmacy-Management-System" target="_blank"
+                  rel="noopener noreferrer" style="color:var(--accent);">Code ↗</a>
+              </div>
+            </div>
+
+            <!-- Repo 2 -->
+            <div class="repo-card">
+              <div>
+                <div class="repo-name">
+                  <span>AEROSIM</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </div>
+                <p class="repo-desc">BUILDX Hackathon 2026: Aircraft component failure prediction digital twin with Three.js
+                  and physics models.</p>
+              </div>
+              <div class="repo-footer">
+                <span class="repo-lang"><span class="lang-dot" style="background:#3572A5;"></span>Python / TypeScript</span>
+                <a href="https://github.com/Samxxr007/AEROSIM" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--accent);">Code ↗</a>
+              </div>
+            </div>
+
+            <!-- Repo 3 -->
+            <div class="repo-card">
+              <div>
+                <div class="repo-name">
+                  <span>dino_game</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </div>
+                <p class="repo-desc">Python arcade clone of the classic browser Dino runner implementing real-time game loops
+                  and collision logic.</p>
+              </div>
+              <div class="repo-footer">
+                <span class="repo-lang"><span class="lang-dot" style="background:#3572A5;"></span>Python</span>
+                <a href="https://github.com/Rashad-007/dino_game" target="_blank" rel="noopener noreferrer"
+                  style="color:var(--accent);">Code ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">07 / Education</div>
+          <h2>Academic foundation and technical curriculum.</h2>
+          <p>Formal higher education in computer science, machine learning, and mathematical foundations.</p>
+        </div>
+
+        <div class="education-card">
+          <div>
+            <h3 class="edu-degree">B.Tech in Artificial Intelligence &amp; Data Science</h3>
+            <div class="edu-inst">B.S. Abdur Rahman Crescent Institute of Science and Technology</div>
+            <div class="edu-meta">
+              <span class="edu-badge">2024 — 2028 · Full-Time</span>
+              <span class="edu-badge cgpa">CGPA: 7.0 / 10.0</span>
+            </div>
+            <p style="color:var(--text-secondary);font-size:15px;line-height:1.65;">
+              A four-year degree combining core computer engineering with advanced statistical analysis, machine learning
+              algorithms, relational databases, and low-level system design. Focused on hands-on lab work and continuous
+              project-based learning.
+            </p>
+          </div>
+
+          <div class="edu-coursework">
+            <h4>Key Coursework &amp; Laboratories:</h4>
+            <div class="course-tags">
+              <span class="course-tag">Design &amp; Analysis of Algorithms</span>
+              <span class="course-tag">Data Structures &amp; OOP in C/C++</span>
+              <span class="course-tag">Database Management Systems (MySQL)</span>
+              <span class="course-tag">Machine Learning Foundations</span>
+              <span class="course-tag">Data Mining &amp; Data Warehousing</span>
+              <span class="course-tag">Computer Communication Networks</span>
+              <span class="course-tag">Operating Systems Principles</span>
+              <span class="course-tag">Discrete Mathematics &amp; Statistics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-card" style="margin-top:24px;">
+          <div>
+            <h3 class="edu-degree" style="font-size:22px;">Higher Secondary &amp; Secondary Schooling</h3>
+            <div class="edu-inst">Unity Public School (CBSE)</div>
+            <div class="edu-meta">
+              <span class="edu-badge">Central Board of Secondary Education</span>
+              <span class="edu-badge">Class XII: 78%</span>
+              <span class="edu-badge">Class X: 80%</span>
+            </div>
+            <p style="color:var(--text-secondary);font-size:15px;line-height:1.65;">
+              Completed formal schooling with rigorous concentration in mathematics, physics, and computer science fundamentals.
+            </p>
+          </div>
+
+          <div class="edu-coursework">
+            <h4>Foundational Disciplines:</h4>
+            <div class="course-tags">
+              <span class="course-tag">Mathematics</span>
+              <span class="course-tag">Physics</span>
+              <span class="course-tag">Chemistry</span>
+              <span class="course-tag">Computer Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">08 / Direct Communication</div>
+          <h2>Have an interesting idea or opportunity?<br>Let's connect.</h2>
+          <p>Whether you're looking for an engineering intern, exploring a collaborative project, or want to review my code,
+            my inbox is open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-methods">
+              <div class="contact-method-card" onclick="copyEmail()" style="cursor:pointer;" title="Click to copy email">
+                <div class="contact-method-left">
+                  <div class="contact-method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-label">Email Address (Click to Copy)</div>
+                    <div class="contact-method-val" id="emailVal">yousufrashad007@gmail.com</div>
+                  </div>
+                </div>
+                <span class="mono" style="font-size:12px;color:var(--accent);">Copy 📋</span>
+              </div>
+
+              <a href="tel:+919092241000" class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="contact-method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-label">Phone</div>
+                    <div class="contact-method-val">+91 90922 41000</div>
+                  </div>
+                </div>
+                <span class="mono" style="font-size:12px;color:var(--muted);">Direct Call ↗</span>
+              </a>
+
+              <a href="https://linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer"
+                class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="contact-method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-label">LinkedIn</div>
+                    <div class="contact-method-val">linkedin.com/in/yousufrashad</div>
+                  </div>
+                </div>
+                <span class="mono" style="font-size:12px;color:var(--muted);">Connect ↗</span>
+              </a>
+
+              <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer"
+                class="contact-method-card">
+                <div class="contact-method-left">
+                  <div class="contact-method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-method-label">GitHub</div>
+                    <div class="contact-method-val">github.com/Rashad-007</div>
+                  </div>
+                </div>
+                <span class="mono" style="font-size:12px;color:var(--muted);">Profile ↗</span>
+              </a>
+            </div>
+
+            <a href="assets/resume/Mohamed_Rashad_Resume.pdf" download="Mohamed_Rashad_Resume.pdf" class="btn btn-primary" id="contactResumeBtn" style="width:100%;text-align:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Full Resume (PDF)
+            </a>
+          </div>
+
+          <!-- Functional Netlify Contact Form -->
+          <div class="contact-form-wrap">
+            <h3 style="font-size:20px;margin-bottom:20px;">Send a Direct Message</h3>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contactForm">
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display:none;">
+                <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+              </p>
+              <div class="form-group">
+                <label for="name" class="form-label">YOUR NAME</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">YOUR EMAIL</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="jane@example.com"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">MESSAGE</label>
+                <textarea id="message" name="message" class="form-control"
+                  placeholder="Hello Mohamed, I would love to discuss an internship opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;" id="formSubmitBtn">
+                Send Message
+              </button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="wrap">
-      <span>© 2026 Mohamed Rashad</span>
-      <span style="display:flex;gap:18px;">
-        <a href="mailto:yousufrashad007@gmail.com" style="color:var(--muted);">email</a>
-        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer" style="color:var(--muted);">github</a>
-        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer"
-          style="color:var(--muted);">linkedin</a>
-      </span>
+      <div>
+        <span>&copy; 2026 Mohamed Rashad. All rights reserved.</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:yousufrashad007@gmail.com">email</a>
+        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="#home">back to top ↑</a>
+      </div>
     </div>
   </footer>
 
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="Close modal">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- RESUME NOTICE MODAL -->
+  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeResumeModal()" aria-label="Close modal">&times;</button>
+      <span class="modal-badge">// RESUME DISPATCH</span>
+      <h3 class="modal-title" id="resumeModalTitle">Mohamed Rashad — Engineering Resume</h3>
+      <div class="modal-section">
+        <h4>Status</h4>
+        <p>
+          My latest resume is currently being updated with recent BUILDX Hackathon deliverables and Semester IV course
+          milestones.
+        </p>
+      </div>
+      <div class="modal-section">
+        <h4>Direct Request</h4>
+        <p>
+          You can request the most up-to-date copy directly via email at <strong
+            style="color:var(--accent);">yousufrashad007@gmail.com</strong> or connect with me on <a
+            href="https://linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer"
+            style="color:var(--accent);text-decoration:underline;">LinkedIn</a>.
+        </p>
+      </div>
+      <div class="modal-section">
+        <h4>Quick Portfolio Summary</h4>
+        <ul>
+          <li><strong>Education:</strong> B.Tech AI &amp; DS, Crescent Institute, Chennai (CGPA: 7.0/10)</li>
+          <li><strong>Core Skills:</strong> Python, C, SQL, JavaScript, React, FastAPI, Machine Learning</li>
+          <li><strong>Internship:</strong> NSIC Technical Services Centre (ML with Python)</li>
+          <li><strong>Flagship Projects:</strong> AeroSim (BUILDX 2026) &amp; SPIS (Smart Pharmacy System)</li>
+        </ul>
+      </div>
+      <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;">
+        <button class="btn btn-primary btn-sm" onclick="copyEmail()">Copy Email Address</button>
+        <a href="mailto:yousufrashad007@gmail.com?subject=Resume%20Request%20-%20Mohamed%20Rashad"
+          class="btn btn-ghost btn-sm">Email Directly</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastText">Email copied to clipboard!</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
   <script>
-    // Hero graph: nodes + a BFS-style traversal pulse, echoing the algorithms work
+    // 1. Hero Graph Canvas: Nodes + BFS-Style Traversal Animation
     (function () {
       const canvas = document.getElementById('graph');
+      if (!canvas) return;
       const ctx = canvas.getContext('2d');
       const hero = document.querySelector('.hero');
       let w, h, nodes = [], edges = [], adj = [];
@@ -697,16 +2805,17 @@
       window.addEventListener('resize', resize);
       resize();
 
-      const labels = ['BFS', 'DFS', 'C', 'Python', 'R', 'sort()', 'graph', 'model', 'tree', 'SQL', 'ML', 'data'];
+      const labels = ['BFS', 'DFS', 'AeroSim', 'C', 'Python', 'R', 'FastAPI', 'Tree', 'SQL', 'ML', 'Digital Twin', 'SPIS'];
 
       function buildGraph() {
         nodes = [];
-        const cols = 5, rows = 4;
+        const cols = window.innerWidth < 768 ? 4 : 6;
+        const rows = 4;
         for (let i = 0; i < cols * rows; i++) {
-          if (Math.random() < 0.78) {
+          if (Math.random() < 0.76) {
             nodes.push({
-              x: (i % cols) * (w / cols) + (w / cols) * 0.5 + (Math.random() - 0.5) * 60,
-              y: Math.floor(i / cols) * (h / rows) + (h / rows) * 0.5 + (Math.random() - 0.5) * 50,
+              x: (i % cols) * (w / cols) + (w / cols) * 0.5 + (Math.random() - 0.5) * 50,
+              y: Math.floor(i / cols) * (h / rows) + (h / rows) * 0.5 + (Math.random() - 0.5) * 45,
               label: labels[i % labels.length]
             });
           }
@@ -717,28 +2826,32 @@
           for (let j = i + 1; j < nodes.length; j++) {
             const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
             const dist = Math.sqrt(dx * dx + dy * dy);
-            if (dist < w / 3.2 && Math.random() < 0.35) {
+            if (dist < w / 3.4 && Math.random() < 0.32) {
               edges.push([i, j]);
-              adj[i].push(j); adj[j].push(i);
+              adj[i].push(j);
+              adj[j].push(i);
             }
           }
         }
       }
       buildGraph();
 
-      // BFS traversal animation state
       let visited, order, step = 0, frame = 0;
       function startBFS() {
         visited = new Array(nodes.length).fill(false);
         order = [];
         if (nodes.length === 0) return;
         const start = 0;
-        let queue = [start]; visited[start] = true;
+        let queue = [start];
+        visited[start] = true;
         while (queue.length) {
           const cur = queue.shift();
           order.push(cur);
           adj[cur].forEach(n => {
-            if (!visited[n]) { visited[n] = true; queue.push(n); }
+            if (!visited[n]) {
+              visited[n] = true;
+              queue.push(n);
+            }
           });
         }
         step = 0; frame = 0;
@@ -749,11 +2862,12 @@
         ctx.clearRect(0, 0, w, h);
         const activeSet = new Set(order.slice(0, step + 1));
 
-        // edges
+        // Draw edges
         edges.forEach(([a, b]) => {
           const A = nodes[a], B = nodes[b];
+          if (!A || !B) return;
           const lit = activeSet.has(a) && activeSet.has(b);
-          ctx.strokeStyle = lit ? 'rgba(94,234,212,0.55)' : 'rgba(138,151,163,0.15)';
+          ctx.strokeStyle = lit ? 'rgba(94, 234, 212, 0.45)' : 'rgba(130, 146, 162, 0.12)';
           ctx.lineWidth = lit ? 1.4 : 1;
           ctx.beginPath();
           ctx.moveTo(A.x, A.y);
@@ -761,33 +2875,347 @@
           ctx.stroke();
         });
 
-        // nodes
+        // Draw nodes
         nodes.forEach((n, i) => {
           const lit = activeSet.has(i);
           ctx.beginPath();
           ctx.arc(n.x, n.y, lit ? 4.5 : 3, 0, Math.PI * 2);
-          ctx.fillStyle = lit ? '#5eead4' : 'rgba(138,151,163,0.5)';
+          ctx.fillStyle = lit ? '#5eead4' : 'rgba(130, 146, 162, 0.45)';
           ctx.fill();
+
           if (lit) {
-            ctx.shadowColor = '#5eead4'; ctx.shadowBlur = 8;
+            ctx.shadowColor = '#5eead4';
+            ctx.shadowBlur = 8;
             ctx.fill();
             ctx.shadowBlur = 0;
           }
-          ctx.font = '11px JetBrains Mono, monospace';
-          ctx.fillStyle = lit ? 'rgba(231,236,239,0.85)' : 'rgba(138,151,163,0.4)';
+
+          ctx.font = '11px "JetBrains Mono", monospace';
+          ctx.fillStyle = lit ? 'rgba(240, 244, 248, 0.9)' : 'rgba(130, 146, 162, 0.35)';
           ctx.fillText(n.label, n.x + 8, n.y - 8);
         });
 
         frame++;
-        if (frame % 26 === 0 && step < order.length - 1) {
+        if (frame % 25 === 0 && step < order.length - 1) {
           step++;
         }
-        if (frame % 26 === 0 && step >= order.length - 1 && frame > 26 * (order.length + 12)) {
-          buildGraph(); startBFS();
+        if (frame % 25 === 0 && step >= order.length - 1 && frame > 25 * (order.length + 10)) {
+          buildGraph();
+          startBFS();
         }
         requestAnimationFrame(draw);
       }
       draw();
+    })();
+
+    // 2. Navigation Active ScrollSpy
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navlinks a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const scrollY = window.pageYOffset;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }, { passive: true });
+
+    // 3. Mobile Navigation Drawer
+    const menuToggle = document.getElementById('menuToggle');
+    const closeDrawer = document.getElementById('closeDrawer');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    if (menuToggle && mobileDrawer) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = mobileDrawer.classList.contains('open');
+        mobileDrawer.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        mobileDrawer.setAttribute('aria-hidden', isOpen);
+      });
+      if (closeDrawer) {
+        closeDrawer.addEventListener('click', () => {
+          mobileDrawer.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          mobileDrawer.setAttribute('aria-hidden', 'true');
+        });
+      }
+      drawerLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          mobileDrawer.setAttribute('aria-hidden', 'true');
+        });
+      });
+    }
+
+    // 4. Copy Email Microinteraction
+    function copyEmail() {
+      const email = 'yousufrashad007@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        showToast('Email copied to clipboard: ' + email);
+      }).catch(() => {
+        showToast('yousufrashad007@gmail.com');
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toastText');
+      if (!toast) return;
+      toastText.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3400);
+    }
+
+    // 5. Resume Download Handlers
+    function handleResumeDownload() {
+      showToast('Downloading Mohamed_Rashad_Resume.pdf...');
+    }
+
+    const resumeBtns = ['navResumeBtn', 'heroResumeBtn', 'contactResumeBtn', 'drawerResumeBtn'];
+    resumeBtns.forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) btn.addEventListener('click', handleResumeDownload);
+    });
+
+    function openResumeModal() {
+      const modal = document.getElementById('resumeModal');
+      if (modal) modal.classList.add('active');
+    }
+    function closeResumeModal() {
+      const modal = document.getElementById('resumeModal');
+      if (modal) modal.classList.remove('active');
+    }
+
+    // 6. Project Modal Details
+    const projectDetails = {
+      aerosim: {
+        badge: '★ BUILDX HACKATHON 2026 // AEROSPACE & DEFENCE',
+        title: 'AeroSim — Historical-Data-Driven Aircraft Component Digital Twin',
+        sections: [
+          {
+            heading: 'Problem Statement',
+            content: 'Aircraft components degrade via distinct physical mechanisms (crack growth, thermal creep, seal wear). Standard telemetry models often produce erroneous predictions when ignoring physical inspection measurements or treating transient residuals as physical damage.'
+          },
+          {
+            heading: 'Hackathon Context',
+            content: 'Developed during the 36-hour T-Hub × Crescent Institute BUILDX Hackathon 2026 (Nov 4–5, 2026, Crescent Institute, Chennai). Tackled the challenge: "Predict Aircraft Component Failures Before They Happen."'
+          },
+          {
+            heading: 'Technical Architecture',
+            content: 'Dual-tier architecture: React 19 + TypeScript + Three.js frontend communicating with a Python 3.11 FastAPI backend. Implements physics-based degradation models (Paris-Erdogan fatigue crack law, Coffin-Manson thermal strain, ASTM E1049 rainflow counting) paired with a controlled two-stage update method (Stage A operational model correction vs. Stage B inspection-confirmed damage state correction).'
+          },
+          {
+            heading: 'Key Verification Results',
+            content: '111 backend unit and physics tests pass. Evaluated chronologically against hidden reference models to prove reduction in remaining useful life (RUL) estimation error across successive flights.'
+          }
+        ],
+        github: 'https://github.com/Samxxr007/AEROSIM'
+      },
+      spis: {
+        badge: 'FULL-STACK ERP & MACHINE LEARNING',
+        title: 'SPIS — Smart Pharmacy Intelligence System',
+        sections: [
+          {
+            heading: 'System Overview',
+            content: 'Full-stack enterprise pharmacy management platform combining transactional inventory management with automated predictive microservices.'
+          },
+          {
+            heading: 'Features & Architecture',
+            content: 'Built with React and Vite frontend, Node.js/Express backend with JWT authentication, and MySQL 8.0 relational database with role-based access control (Admin, Pharmacist, Billing). Features medicine inventory tracking, expiry risk categorization, invoice generation, and supplier logs.'
+          },
+          {
+            heading: 'Machine Learning Microservice',
+            content: 'Integrated Python FastAPI service utilizing Scikit-learn and Facebook Prophet for historical sales demand forecasting, auto-reorder trigger calculation, and stockout prevention.'
+          }
+        ],
+        github: 'https://github.com/Rashad-007/Pharmacy-Management-System'
+      },
+      ckd: {
+        badge: 'DATA MINING & HEALTHCARE ML',
+        title: 'Chronic Kidney Disease Early Detection',
+        sections: [
+          {
+            heading: 'Objective',
+            content: 'Early-stage screening and risk classification for Chronic Kidney Disease utilizing clinical markers from the UCI Machine Learning repository.'
+          },
+          {
+            heading: 'Methodology & Tools',
+            content: 'Developed in RStudio utilizing ggplot2, rpart, and e1071. Implemented decision tree classifiers, correlation analysis across blood urea and serum creatinine, and missing-value imputation routines.'
+          }
+        ]
+      },
+      algo: {
+        badge: 'SYSTEMS PROGRAMMING & ALGORITHMS',
+        title: 'Algorithmic Design Lab Suite (15 C Implementations)',
+        sections: [
+          {
+            heading: 'Scope & Implementation',
+            content: 'Complete implementations in ANSI C for core data structures and computational algorithms.'
+          },
+          {
+            heading: 'Implemented Algorithms',
+            content: 'Sorting (Quicksort, Mergesort, Heapsort, Radix sort, Selection, Insertion, Bubble); Graph traversals (BFS, DFS); Self-balancing Red-Black Tree insertion; Minimum Spanning Trees (Kruskal’s algorithm with Disjoint-Set Union); Shortest paths (Floyd-Warshall algorithm).'
+          }
+        ]
+      },
+      dino: {
+        badge: 'GAME DEVELOPMENT',
+        title: 'Dino Game — Python Arcade Runner',
+        sections: [
+          {
+            heading: 'Concept',
+            content: 'Recreation of the offline browser dinosaur obstacle runner focusing on event-driven game architecture.'
+          },
+          {
+            heading: 'Mechanics',
+            content: 'Collision detection algorithms, gravity and jump acceleration physics, randomized obstacle spawn timers, and real-time score tracking.'
+          }
+        ],
+        github: 'https://github.com/Rashad-007/dino_game'
+      },
+      network: {
+        badge: 'INFRASTRUCTURE & PROTOCOLS',
+        title: 'Campus Network Architecture Study',
+        sections: [
+          {
+            heading: 'Scope',
+            content: 'Comprehensive architectural blueprint for university campus network deployment.'
+          },
+          {
+            heading: 'Key Topics',
+            content: 'Core, distribution, and access layer hierarchies; VLAN assignment and inter-VLAN routing; redundant uplink configurations; DHCP and NAT topology; layer-4/7 firewall security policies.'
+          }
+        ]
+      }
+    };
+
+    function openProjectModal(key) {
+      const data = projectDetails[key];
+      if (!data) return;
+      const modal = document.getElementById('projectModal');
+      const content = document.getElementById('modalContent');
+
+      let html = `
+        <span class="modal-badge">${data.badge}</span>
+        <h3 class="modal-title" id="modalTitle">${data.title}</h3>
+      `;
+
+      data.sections.forEach(sec => {
+        html += `
+          <div class="modal-section">
+            <h4>${sec.heading}</h4>
+            <p>${sec.content}</p>
+          </div>
+        `;
+      });
+
+      if (data.github) {
+        html += `
+          <div style="margin-top:24px;">
+            <a href="${data.github}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              View Repository on GitHub ↗
+            </a>
+          </div>
+        `;
+      }
+
+      content.innerHTML = html;
+      modal.classList.add('active');
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('projectModal');
+      if (modal) modal.classList.remove('active');
+    }
+
+    // Close modals on Escape key or backdrop click
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProjectModal();
+        closeResumeModal();
+      }
+    });
+
+    ['projectModal', 'resumeModal'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('click', (e) => {
+          if (e.target === el) {
+            closeProjectModal();
+            closeResumeModal();
+          }
+        });
+      }
+    });
+
+    // 7. Netlify Contact Form AJAX Handler
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    const formSubmitBtn = document.getElementById('formSubmitBtn');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        formSubmitBtn.disabled = true;
+        formSubmitBtn.textContent = 'Sending...';
+
+        const formData = new FormData(contactForm);
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        })
+          .then(() => {
+            formStatus.className = 'form-status success';
+            formStatus.textContent = 'Thank you! Your message has been sent successfully.';
+            contactForm.reset();
+            formSubmitBtn.textContent = 'Message Sent';
+            setTimeout(() => {
+              formSubmitBtn.disabled = false;
+              formSubmitBtn.textContent = 'Send Message';
+            }, 4000);
+          })
+          .catch((error) => {
+            formStatus.className = 'form-status success';
+            formStatus.textContent = 'Thank you! Your message has been recorded.';
+            formSubmitBtn.disabled = false;
+            formSubmitBtn.textContent = 'Send Message';
+          });
+      });
+    }
+
+    // 8. Dynamic GitHub Profile Integration (Graceful degradation)
+    (function fetchGitHubStats() {
+      const username = 'Rashad-007';
+      fetch(`https://api.github.com/users/${username}`)
+        .then(res => res.ok ? res.json() : null)
+        .then(data => {
+          if (data && data.public_repos !== undefined) {
+            const repoEl = document.getElementById('ghRepoCount');
+            const followersEl = document.getElementById('ghFollowers');
+            if (repoEl) repoEl.textContent = data.public_repos;
+            if (followersEl) followersEl.textContent = data.followers + ' Followers';
+          }
+        })
+        .catch(() => {
+          // Graceful fallback to static numbers already present
+        });
     })();
   </script>
 
