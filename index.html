@@ -5,14 +5,93 @@
   <meta charset="UTF-8">
   <meta name="google-site-verification" content="NsSNLHqqx9WzMVt_Y7NGK7zXjLEJX7FHuGe7LIuwb3U" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohamed Rashad — AI & Data Science</title>
-  <meta name="description"
-    content="Mohamed Rashad — B.Tech AI & Data Science student. Algorithms, data mining, and applied ML projects including SPIS, an AI-powered pharmacy management platform.">
-  <meta property="og:title" content="Mohamed Rashad — AI & Data Science">
-  <meta property="og:description"
-    content="B.Tech AI & Data Science student. Algorithms, data mining, and applied ML projects including SPIS, an AI-powered pharmacy management platform.">
+  <title>Mohamed Rashad | AI &amp; Data Science Student | Developer</title>
+  <meta name="description" content="Mohamed Rashad — AI & Data Science student at Crescent Institute, Chennai. Building algorithms, machine learning models, and full-stack systems like SPIS.">
+  <meta name="author" content="Mohamed Rashad">
+  <meta name="keywords" content="Mohamed Rashad, AI and Data Science, Machine Learning, Portfolio, Student Developer, SPIS, Software Engineer, Chennai, Crescent Institute">
+  <link rel="canonical" href="https://portfolio-rashad.netlify.app/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mohamed Rashad Portfolio">
+  <meta property="og:title" content="Mohamed Rashad | AI & Data Science Student | Developer">
+  <meta property="og:description" content="Mohamed Rashad — AI & Data Science student at Crescent Institute, Chennai. Building algorithms, machine learning models, and full-stack systems like SPIS.">
+  <meta property="og:url" content="https://portfolio-rashad.netlify.app/">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mohamed Rashad | AI & Data Science Student | Developer">
+  <meta name="twitter:description" content="Mohamed Rashad — AI & Data Science student at Crescent Institute, Chennai. Building algorithms, machine learning models, and full-stack systems like SPIS.">
+  <meta name="twitter:url" content="https://portfolio-rashad.netlify.app/">
+
+  <!-- Structured Data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://portfolio-rashad.netlify.app/#person",
+        "name": "Mohamed Rashad",
+        "url": "https://portfolio-rashad.netlify.app/",
+        "jobTitle": "AI & Data Science Student | Aspiring Software Engineer",
+        "description": "AI & Data Science student at Crescent Institute of Science and Technology, Chennai. Working across algorithms, machine learning, and full-stack development.",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "B.S. Abdur Rahman Crescent Institute of Science and Technology"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "India"
+        },
+        "sameAs": [
+          "https://github.com/Rashad-007",
+          "https://www.linkedin.com/in/yousufrashad"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Data Science",
+          "Machine Learning",
+          "Algorithms",
+          "Data Mining",
+          "Python",
+          "C",
+          "SQL",
+          "Full-Stack Development"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://portfolio-rashad.netlify.app/#website",
+        "url": "https://portfolio-rashad.netlify.app/",
+        "name": "Mohamed Rashad Portfolio",
+        "description": "Personal portfolio of Mohamed Rashad — AI & Data Science Student & Aspiring Software Engineer.",
+        "publisher": {
+          "@id": "https://portfolio-rashad.netlify.app/#person"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://portfolio-rashad.netlify.app/#webpage",
+        "url": "https://portfolio-rashad.netlify.app/",
+        "name": "Mohamed Rashad | AI & Data Science Student | Developer",
+        "isPartOf": {
+          "@id": "https://portfolio-rashad.netlify.app/#website"
+        },
+        "about": {
+          "@id": "https://portfolio-rashad.netlify.app/#person"
+        },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap"
@@ -356,8 +435,13 @@
       text-align: left;
     }
 
-    .contact h2 {
+    .contact h2,
+    .contact-subhead {
       font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
       max-width: 600px;
       margin-bottom: 24px;
     }
@@ -410,7 +494,7 @@
 
 <body>
 
-  <nav>
+  <nav aria-label="Main Navigation">
     <div class="wrap">
       <div class="logo">rashad<span>.dev</span></div>
       <div class="navlinks">
@@ -422,8 +506,10 @@
     </div>
   </nav>
 
+  <main id="main-content">
+
   <section class="hero">
-    <canvas id="graph"></canvas>
+    <canvas id="graph" role="img" aria-label="Animated graph traversal algorithm visualization"></canvas>
     <div class="wrap hero-inner">
       <div class="eyebrow mono">B.TECH AI &amp; DATA SCIENCE · SEMESTER IV</div>
       <h1>I build things that <em>traverse</em>,<br>learn, and predict.</h1>
@@ -511,7 +597,7 @@
         <h2>Projects</h2>
       </div>
 
-      <div class="project">
+      <article class="project">
         <div class="project-id mono">01</div>
         <div>
           <h3>SPIS — Smart Pharmacy Intelligence System</h3>
@@ -524,12 +610,12 @@
               class="tag">Scikit-learn</span><span class="tag">Prophet</span><span class="tag">AI-Assisted Build</span>
           </div>
           <div class="tags" style="margin-top:10px;"><a href="https://github.com/Rashad-007/Pharmacy-Management-System"
-              target="_blank" rel="noopener" class="tag" style="color:var(--text);border-color:var(--line);">↗ View on
+              target="_blank" rel="noopener noreferrer" class="tag" style="color:var(--text);border-color:var(--line);">↗ View on
               GitHub</a></div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <div class="project-id mono">02</div>
         <div>
           <h3>Algorithmic Design Lab Suite</h3>
@@ -539,9 +625,9 @@
           <div class="tags"><span class="tag">C</span><span class="tag">Data Structures</span><span class="tag">Graph
               Theory</span></div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <div class="project-id mono">03</div>
         <div>
           <h3>CKD Early Detection</h3>
@@ -551,9 +637,9 @@
           <div class="tags"><span class="tag">Data Mining</span><span class="tag">Classification</span><span
               class="tag">Healthcare</span></div>
         </div>
-      </div>
+      </article>
 
-      <div class="project">
+      <article class="project">
         <div class="project-id mono">04</div>
         <div>
           <h3>Campus Network Architecture Study</h3>
@@ -561,7 +647,7 @@
             layers, applied to a real campus network scenario.</p>
           <div class="tags"><span class="tag">Networking</span><span class="tag">Systems Design</span></div>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
@@ -571,24 +657,26 @@
         <span class="section-num mono">04</span>
         <h2>Contact</h2>
       </div>
-      <h2>Open to internships, research roles,<br>and collaborative builds.</h2>
+      <h3 class="contact-subhead">Open to internships, research roles,<br>and collaborative builds.</h3>
       <div class="contact-links">
         <a href="mailto:yousufrashad007@gmail.com" class="btn btn-primary">yousufrashad007@gmail.com</a>
         <a href="tel:+919092241000" class="btn btn-ghost">+91 90922 41000</a>
-        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn
+        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">LinkedIn
           ↗</a>
-        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub ↗</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer>
     <div class="wrap">
       <span>© 2026 Mohamed Rashad</span>
       <span style="display:flex;gap:18px;">
         <a href="mailto:yousufrashad007@gmail.com" style="color:var(--muted);">email</a>
-        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener" style="color:var(--muted);">github</a>
-        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener"
+        <a href="https://github.com/Rashad-007" target="_blank" rel="noopener noreferrer" style="color:var(--muted);">github</a>
+        <a href="https://www.linkedin.com/in/yousufrashad" target="_blank" rel="noopener noreferrer"
           style="color:var(--muted);">linkedin</a>
       </span>
     </div>

@@ -2,7 +2,7 @@
 
 Personal portfolio site for Mohamed Rashad, a B.Tech AI & Data Science student at Crescent Institute of Science and Technology. Built as a single static page — no framework, no build step.
 
-🔗 **Live:** _add your Netlify URL here after deploying_
+🔗 **Live:** [portfolio-rashad.netlify.app](https://portfolio-rashad.netlify.app/)
 
 ## Highlights
 
