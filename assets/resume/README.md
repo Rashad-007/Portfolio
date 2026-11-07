@@ -1,8 +1,7 @@
 # Resume Storage
 
-Place Mohamed Rashad's latest resume PDF here:
+Current active resume files:
+- `assets/resume/Mohamed_Rashad_Microsoft_Software_Engineering_Resume.pdf` (Uploaded source resume)
+- `assets/resume/Mohamed_Rashad_Resume.pdf` (Production download target for website visitors)
 
-File path: `assets/resume/Mohamed_Rashad_Resume.pdf`
-
-Once placed, the portfolio website will automatically link to and download this file directly.
-
+The portfolio website download buttons link to `assets/resume/Mohamed_Rashad_Resume.pdf` and trigger an automated download with `download="Mohamed_Rashad_Resume.pdf"`.
